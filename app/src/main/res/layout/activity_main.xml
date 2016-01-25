@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context="com.bb.immunizelu.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/News_Notifications"
+        android:src="@drawable/news_notifications"
+         />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/records"
+        android:id="@+id/records"
+        android:layout_below="@+id/News_Notifications"
+        android:layout_alignParentStart="true"
+        android:onClick="setRecords"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reminder"
+        android:id="@+id/reminder"
+        android:layout_below="@+id/News_Notifications"
+        android:layout_toRightOf="@id/records"
+         />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outbreaks"
+        android:id="@+id/outbreaks"
+        android:layout_below="@+id/records"
+        android:layout_alignParentStart="true" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile"
+        android:id="@+id/profile"
+        android:layout_below="@+id/reminder"
+        android:layout_toRightOf="@id/outbreaks" />
+
+
+
+</RelativeLayout>
