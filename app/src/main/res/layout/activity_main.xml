@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerHorizontal="true"
-    tools:context="com.bb.immunizelu.MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="immunizelu.bb.com.immunizelu_1.MainActivity"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Immunize Canada"
+        android:id="@+id/textView"
+        android:textColor="#b2b2b2"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/News_Notifications"
         android:src="@drawable/news_notifications"
-         />
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -28,9 +43,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/reminder"
         android:id="@+id/reminder"
-        android:layout_below="@+id/News_Notifications"
-        android:layout_toRightOf="@id/records"
-         />
+        android:layout_alignTop="@+id/records"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/records" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,8 +59,8 @@
         android:src="@drawable/profile"
         android:id="@+id/profile"
         android:layout_below="@+id/reminder"
-        android:layout_toRightOf="@id/outbreaks" />
-
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/outbreaks" />
 
 
 </RelativeLayout>
